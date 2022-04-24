@@ -1,0 +1,47 @@
+.tools {
+    padding-top: 80px;
+}
+.tool {
+    padding: 64px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tool img {
+
+    height: 300px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: flex;
+    border-radius: 16px;
+}
+.text{
+    width: 400px;
+}
+.tool h4{
+    font-size: 40px;
+    color: rgb(147, 49, 32);
+    padding-right: 8px;
+
+
+}
+.tool p{
+    padding:10px 0;
+    font-size: 20px;
+    color:black;
+
+}
+.tool button{
+    margin: 10px 0;
+    background-color: #f33f3f;
+    color: #fff;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 300;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    display: inline-block;
+    transition: all 0.3s;
+    box-shadow: 0px 0px 4px  red;
+}
