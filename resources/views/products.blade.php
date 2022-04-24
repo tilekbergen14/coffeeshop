@@ -28,24 +28,40 @@
                 </div>
                 <div class="col-md-12">
                     <div class="filters-content">
-                        <div class="row grid">
+                        <div class="row">
                             @foreach ($products as $product)
-                                <div class="col-lg-4 col-md-4 all des">
+                                <div class="col-md-4">
                                     <div class="product-item">
                                         <a href="#"><img src={{ $product->image }} alt="" /></a>
                                         <div class="down-content">
                                             <a href="#">
                                                 <h4>{{ $product->name }}</h4>
                                             </a>
-                                            <h6>&#8366 {{ $product->price }}</h6>
-
-                                            <ul class="stars">
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                            </ul>
+                                            <h6>{{ $product->price }} &#8366</h6>
+                                            <div class="d-flex justify-content-between">
+                                                <ul class="stars d-flex align-items-center">
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                </ul>
+                                                @if (auth()->user() && $product->favourited(auth()->user()->id, $product->id))
+                                                    <form action="{{ route('addtocard', $product) }}" method="POST">
+                                                        @csrf
+                                                        <button class="btn btn-warning">
+                                                            <i class="fa fa-cart-plus"></i>
+                                                        </button>
+                                                    </form>
+                                                @else
+                                                    <form action="{{ route('addtocard', $product) }}" method="POST">
+                                                        @csrf
+                                                        <button class="btn btn-primary">
+                                                            <i class="fa fa-cart-plus"></i>
+                                                        </button>
+                                                    </form>
+                                                @endif
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
