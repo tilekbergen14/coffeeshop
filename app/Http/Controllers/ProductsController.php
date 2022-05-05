@@ -19,10 +19,6 @@ class ProductsController extends Controller
             return $next($request);
         });
     }
-    public function index(){
-        $products = Product::paginate(10);
-        return view("products", ["products" => $products]);
-    }
     public function delete(Request $request){
         Product::find($request->id)->delete();
         return back();

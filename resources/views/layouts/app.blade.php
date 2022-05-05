@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
         rel="stylesheet" />
 
-    <title>Coffee Shop</title>
+    <title>Restaurant Astana</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -40,11 +40,11 @@ https://templatemo.com/tm-546-sixteen-clothing
     <!-- ***** Preloader End ***** -->
 
     <!-- Header -->
-    <header class="bg-primary">
+    <header class="bg-info">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="/">
-                    <h2>CoffeShop</h2>
+                    <h2>Restaurant Astana</h2>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                     aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,12 +63,12 @@ https://templatemo.com/tm-546-sixteen-clothing
                         </li>
                         @guest
                             <form action="{{ route('register') }}">
-                                <button class="btn btn-primary mt-1">Тіркелу</button>
+                                <button class="btn btn-info mt-1">Тіркелу</button>
                             </form>
                         @endguest
                         @auth
                             <form action="{{ route('dashboard') }}">
-                                <button class="btn btn-primary mt-1">
+                                <button class="btn btn-info mt-1">
                                     Жеке кабинет
                                 </button>
                             </form>
@@ -86,7 +86,7 @@ https://templatemo.com/tm-546-sixteen-clothing
             <div class="row">
                 <div class="col-md-12">
                     <div class="inner-content">
-                        <p>Copyright &copy; 2022 CoffeShop</p>
+                        <p>Copyright &copy; 2022 Restaurant Astana</p>
                     </div>
                 </div>
             </div>

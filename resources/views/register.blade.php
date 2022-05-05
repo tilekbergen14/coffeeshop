@@ -6,7 +6,7 @@
             <form action="{{ route('register') }}" method='POST' class="text-center">
                 @csrf
                 <div class="mb-2">
-                    <a class="navbar-brand" href="/">CoffeeShop</a>
+                    <a class="navbar-brand" href="/">Restaurant Astana</a>
                 </div>
                 @error('name')
                     <p class="text-start text-danger w-100 m-0" style="font-size: 14px">{{ $message }}</p>
@@ -42,7 +42,7 @@
                         <input name='remember' type="checkbox" value="remember-me"> Remember me
                     </label>
                 </div>
-                <button class="w-100 btn btn-lg btn-primary" type="submit">Register</button>
+                <button class="w-100 btn btn-lg btn-info" type="submit">Register</button>
                 <div class="my-2">Тіркеліп қойдың ба? <a href="{{ route('login') }}">Кіру</a></div>
             </form>
         </div>

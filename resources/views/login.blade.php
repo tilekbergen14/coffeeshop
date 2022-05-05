@@ -6,7 +6,7 @@
             <form action="{{ route('login') }}" method='POST' class="text-center">
                 @csrf
                 <div class="mb-2">
-                    <a class="navbar-brand" href="/">CoffeeShop</a>
+                    <a class="navbar-brand" href="/">Restaurant Astana</a>
                 </div>
                 @if (session('status'))
                     <div class="alert alert-danger">
@@ -32,7 +32,7 @@
                         <input type="checkbox" value="on" name='remember'> Есте сақтау
                     </label>
                 </div>
-                <button class="w-100 btn btn-lg btn-primary" type="submit">Кіру</button>
+                <button class="w-100 btn btn-lg btn-info" type="submit">Кіру</button>
             </form>
         </div>
     </div>

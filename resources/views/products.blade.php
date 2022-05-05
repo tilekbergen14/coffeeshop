@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="text-content">
-                        <h2 class="text-info">CoffeeShop!</h2>
+                        <h2 class="text-info">Restaurant Astana!</h2>
                     </div>
                 </div>
             </div>
@@ -56,7 +56,7 @@
                                                 @else
                                                     <form action="{{ route('addtocard', $product) }}" method="POST">
                                                         @csrf
-                                                        <button class="btn btn-primary">
+                                                        <button class="btn btn-info">
                                                             <i class="fa fa-cart-plus"></i>
                                                         </button>
                                                     </form>

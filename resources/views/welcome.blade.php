@@ -44,7 +44,7 @@
                                     @else
                                         <form action="{{ route('addtocard', $product) }}" method="POST">
                                             @csrf
-                                            <button class="btn btn-primary">
+                                            <button class="btn btn-info">
                                                 <i class="fa fa-cart-plus"></i>
                                             </button>
                                         </form>
@@ -63,7 +63,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-heading">
-                        <h2>CoffeeShop!</h2>
+                        <h2>Restaurant Astana!</h2>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -76,7 +76,7 @@
                         <ul class="featured-list">
                             <li>Қазақстан қалаларына жеткізу қызметі</li>
                         </ul>
-                        <a href="about.html" class="filled-button">Толығырақ</a>
+                        <a href="about.html" class="btn btn-info">Толығырақ</a>
                     </div>
                 </div>
                 <div class="col-md-6">
